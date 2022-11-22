@@ -42,3 +42,31 @@ int main()
         }
     }
 }
+//货物摆放 思路；找出所有约数，枚举所有约数，判断成立的方案个数
+main()
+{
+   typedef long long ll;
+   ll tol = 0;
+   ll n = 2021041820210418;  
+      for(ll i = 1;i*i<= n;i++)//类似于开根号的想法，只需要求出前半部分的约数
+      {
+        if(n%i == 0){
+        ll a = i;
+        ll n1 = n/a;
+           for(ll j = 1;j*j<n1;j++){             
+              if(n1%j == 0){
+              ll b = j;
+              ll c = n1/b;
+              if(a<=b&&b<=c){
+                if(a==b&&b==c) tol++;
+                if(a==b&&b!=c) tol +=3;
+                if(a!=b&&b==c) tol +=3;
+                if(a==c&&b!=c) tol +=3;
+                if(a!=b&&b!=c&&a!=c) tol +=6;
+              }
+          }
+        }
+   }
+   }
+   cout << tol <<endl;
+}
