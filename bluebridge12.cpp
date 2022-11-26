@@ -144,3 +144,95 @@ int main()
     cout<<n;
     return 0;
 }
+//数列排序
+
+ /* void bubble(int arr[],int z)
+ {   
+    //int z = sizeof(arr)/sizeof(arr[0]); 
+    for(int i=0;i<z-1;i++){
+        for(int j=0;j<z-1-i;j++){
+            if(arr[j]> arr[j+1]){
+                int itmp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = itmp;
+            }
+        }
+    }
+    
+ }
+ int main()
+ {
+  int z;
+  cin>>z;
+  int arr[z];
+    for ( int i = 0; i < z; i++)
+ {
+     cin>>arr[i];
+ }
+  
+    bubble(arr,z);
+    for(int i=0;i<z;i++){
+        cout<<arr[i]<<endl;
+    }
+    return 0;
+ } */  
+ //闰年判断
+ /* int main()
+ {
+    int n;
+    cout<<"输出一个年份"<<endl;
+    cin>>n;
+    if((n%4==0&&n%100!=0)||n%400 == 0)
+       cout <<"yes"<<endl;
+    else
+       cout <<"no"<<endl;
+    return 0;
+ }  */
+ //01字符串
+ /* int pow(int x,int y){
+    int z = x;
+    if(x == 1)
+        return 1;
+    if(y==0)
+    return 1;
+        while (y!=1)
+        {
+           z=z*x;
+           y--;
+        }
+    return z;
+ }
+ int main()
+ {   
+    int x = 5;
+    int m = 0;
+    for(int i = 0;i<32;i++){ 
+        int y = i;
+        int n = x;   
+       while(n!=0){
+        m = y /pow(2,n-1);
+        cout<<m;
+        y = y %pow(2,n-1);
+        n--;       
+    } 
+    cout<<endl;
+}
+    return 0;
+} 
+ */
+int main()
+{
+    int n,m;
+    cin>>n>>m;
+    for(int i = 0;i<=n;i++){
+        for(int j = i;j<m;j++){
+            char x  = ('A'+j);
+            cout <<x; 
+            int m = 
+
+        
+        }
+        cout<<endl;
+    }
+    return 0;
+}
