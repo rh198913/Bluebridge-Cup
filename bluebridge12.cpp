@@ -236,3 +236,159 @@ int main()
     }
     return 0;
 }
+//数列特征
+/* int main()
+{
+   int n;
+   int num = 0;
+   cin>>n;
+   int arr[n];
+   for(int i = 0;i<n;i++){
+    cin>>arr[i];   
+   }
+   int a = arr[0];
+   int b = arr[0];
+   for(int i = 0;i<n;i++){
+    num += arr[i];
+    if(arr[i]>a)
+        a = arr[i];  
+    if(b>arr[i])
+        b = arr[i];
+   }
+   cout<<a<<endl;
+   cout<<b<<endl;
+   cout<<num<<endl;
+   return 0;
+} */
+/* int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int m;
+    cout<<"输出你需要的数"<<endl;
+    cin>>m;
+    for(int i = 0;i<n;i++){
+        int k = i;
+            k++;           
+        bool c = false;//用来标记
+        if(arr[i] == m){
+            cout<<k;           
+            c = true;
+            if(c)
+            return 0; 
+        }   
+    }
+     cout <<-1;
+     return 0;
+}*/
+//杨辉三角
+/* int main()
+{
+    int n;
+    cin >>n;
+    int a[n][n];
+    for(int i=0;i<n;i++){
+        for(int j =0;j<=i;j++){
+            if(i==0||j==0||i==j)
+                a[i][j] = 1;
+            else{
+                a[i][j] = a[i-1][j-1]+a[i-1][j]; 
+              } 
+              cout<<a[i][j]<<' ';         
+        }
+        cout<<endl;
+    }
+     return 0;  
+} */
+
+/* int main()
+{
+    float t,c,s;
+    float t1;
+    float v;
+    cin>>t>>c>>s;  
+    v = c/t;
+    t1 = s/v-t;
+       
+  cout << (int)t1<<endl;    
+} */
+  /* int main()
+{
+   int n;
+   cin>>n;
+   string  a[n];
+   string b[10];
+   for(int i = 0;i<5;i++){
+       cin>>a[i];
+   }
+   for(int i = 0;i<5;i++){
+    if(a[i] != a[i+1])
+        b[i] = a[i];   
+   }
+   for(int i;i<n;i++){
+    cout<<b[i]<<endl;
+   }
+   return 0;
+} 
+ */
+ /* int main()
+ {
+    int  n,m;
+    int g = 10;
+    int num=0;
+    cin>>n>>m;
+    char a[n][m];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<g;j++){
+            cin>>a[i][j];
+        }
+    }
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++)
+           for(int k = 0;k<g;k++)
+
+        if(a[i][j]==a[i-1][j-1]&&a[i-1][j-1]==a[i-1][j+1]&&a[i-1][j+1]==a[i+1][j-1]&&a[i+1][j-1]==a[i+1][j+k])
+        ||(a[i][j]==a[i-2][j-2]&&a[i-2][j-2]==a[i-2][j+2]&&a[i-2][j+2]==a[i+2][j-2]&&a[i+2][j-2]==a[i+2][j+2]))
+        num++;
+    }
+    cout<<num<<endl;
+    return 0;
+ } */
+ 
+/* bool k(int a[],int n){
+    for(int i=0;i<n;i++)
+        for(int j=i+1;j<n;j++)
+            if(a[i]>a[j])
+                return true;
+        
+            return false;      
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    int num =0;
+    for(int i=0;i<n;i++){
+        cin>>a[i];       
+    }
+    while (k(a,n))
+    {
+        for(int i=0;i<n;i++){
+            if(a[i]>a[i+1]){
+                num = num+a[i];
+                int t = a[i];
+                a[i] = a[i+1];
+                a[i+1] = t;               
+        }
+    }   
+    cout<< num <<endl;
+    return 0;
+    }
+} */
+
