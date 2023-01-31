@@ -48,4 +48,30 @@ int main(){
     cout<<m<<endl;
     return 0;
 } */
+//随机月份，编写一个随机产生1和12之间的整数的程序，并且根据数字显示相应的单词
+/* int main(){
+    string arr[12] = {"january","february","march","april","may","june",
+    "july","august","september","october","november","december"};
+    int z = sizeof(arr)/sizeof(0);
+    int n;
+    cout<<"请输入你想输入的月份："<<endl;
+    cin>>n;   
+    cout<<arr[n-1]<<endl;
+    return 0;
+} */
+//计算三角形的周长
+/* int main(){
+    int a,b,c; 
+    int sum = 0;
+    cout<<"请输入三角形的三条边长"<<endl;
+    cin>>a>>b>>c;
+    if((a+b<=c)||(a+c<=b)||(b+c<= a))
+        cout<<"输入的边长不对"<<endl;
+    else
+        sum = a + b + c;
+        cout <<sum<<endl;  
+    return 0;
+ } */
+      
+     
     
