@@ -20,4 +20,32 @@ int main(){
         cout<<total[1]<<endl;    
     return 0;
 }
+//简单题
+//读取1-1000之间的整数，求整数各位数的和
+/*
+int main(){
+    int n;
+    int num = 0;
+    cin>>n;
+    while(n){
+        int m = n%10;
+        num = num + m;
+        n = n/10;
+    }
+    cout<<num<<endl;
+    return 0;
+} */
+//金融应用，复利值，每月存一百元，年利率，每月0.05/12 = 0.00417
+/* int main(){
+    int n;
+    cout<<"请输入n个月后账户上的钱"<<endl;
+    cin>>n;
+    double m = 0;
+    while (n){   
+        m = (100 + m)*(1.0+0.05/12);
+        n--;
+    }
+    cout<<m<<endl;
+    return 0;
+} */
     
