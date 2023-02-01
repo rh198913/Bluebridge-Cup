@@ -72,6 +72,18 @@ int main(){
         cout <<sum<<endl;  
     return 0;
  } */
+/* //抽牌，模拟一副52张的牌并随机抽取一张，并显示牌的大小和花色
+ int main()
+ {
+    srand ((unsigned)time(0));
+    //如果不用srand函数，用rand产生的随机数多次运行结果一样
+    string arr1[] = {"1","2","3","4","5","6","7","8","9","10","J","Q","K"};
+    string arr2[] = {"方块","梅花","红桃","黑桃"};   
+    int p = rand()%52;
+    cout<<"抽到的是：";
+    cout<<arr1[p/13]<<arr2[p/4]<<endl;   
+ }
+  */
       
      
     
