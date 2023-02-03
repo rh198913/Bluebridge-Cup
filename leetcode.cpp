@@ -114,6 +114,17 @@ int main()
 	}
     return 0;
 }
+int main()
+{
+    int num ;
+    cout<<"每个月第一天分别是";
+    int arr[12] = {1,32,60,91,121,151,182,213,243,274,304,335};
+    for(int i;i<=12;i++){
+        num = arr[i]%7;
+        cout<<"星期"<<num<<endl;   
+    }
+    return 0;
+} 
  
       
      
