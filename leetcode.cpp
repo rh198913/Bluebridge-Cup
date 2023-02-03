@@ -125,6 +125,25 @@ int main()
     }
     return 0;
 } 
+/* //完全数，如果一个数等于他所有除数之和，写求出10000以内四个数
+int main(){
+    for(int i = 2;i<10000;i++){
+        int a = 2; 
+        int num = 1;      
+        while(a <= sqrt(i)){
+        if(i%a == 0){
+            if(a!=i/a)
+                num += a+i/a;           
+                else num += a;
+        }
+        a++;
+        }
+        if(num == i) cout<<num<<endl;      
+    }
+    return 0;
+} */
+
+
  
       
      
